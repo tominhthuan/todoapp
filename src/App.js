@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import tick from './img/tick.png';
 //component
 import TodoList from './component/TodoList';
 
@@ -33,10 +34,18 @@ class App extends Component {
       });
     };
   }
+
+  onKeyUp(event) {
+    console.log(event.target.value);
+  }
   render() {
     const { todolist } = this.state;
     return (
       <div className="todoapp">
+        <div className='Header'>
+          <img src={tick} alt='#' width={30} height={30} />
+          <input type='text' placeholder='Add a new item' onKeyUp={this.onKeyUp} />
+        </div>
         {
           todolist.map((item, index) =>
             <TodoList

@@ -1,8 +1,23 @@
 .todoapp{
-  text-align: center;
+  
   width: 500px;
   margin:0px auto;
   border: 1px solid #EEE;
+}
+.Header{
+  padding: 10px;
+  border: 1px solid #bebebe;
+  display: flex;
+}
+.Header input{
+  font-size: 24px;
+  font-weight: 300;
+  margin-left: 20px;
+  width: 100%;
+  border: none;
+}
+.Header input:focus{
+  outline: none;
 }
 .todolist-complete > p{
   text-decoration: line-through;
@@ -12,7 +27,8 @@
   padding: 10px;
   border: 1px solid #bebebe;
   display: flex;
-
+  font-size: 24px;
+  font-weight: 300;
 }
 .TodoList > p{
   margin: 0;
